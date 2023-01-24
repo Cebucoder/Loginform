@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Login Page</title>
+</head>
+<body>
+
+
+<div class="container">
+	
+<div class="content">
+	<h1 class="headtag">Login</h1>
+	<input type="text" name="" placeholder="Username.." id="Username">
+	<input type="password" name="" placeholder="Password.." id="Password">
+
+
+	<!-- adding error and success promt -->
+	<div class="success" id="success">You successfully Login!</div>
+	<div class="error" id="error">Incorrect username or password?</div>
+
+	<button onclick="submit()">Login</button>
+
+	<a href="">Forgot Password?</a>
+</div>
+
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+
+	// now lets add the function
+	// first lets add id first
+
+function submit(){
+	let username = document.getElementById("Username").value;
+	let password = document.getElementById("Password").value;
+
+	// promt error and success
+
+	let success = document.getElementById("success");
+	let error = document.getElementById("error");
+
+
+	let defaultuser = "cebucoder";
+	let defaultpass = "cebucoder101";
+
+	if ((username == defaultuser) && (password == defaultpass)) {
+		// alert("correct");
+		success.classList.add("show-success");
+		error.classList.remove("show-error");
+
+
+
+		// for testing
+	}else{
+		error.classList.add("show-error");
+		success.classList.remove("show-success");
+	}
+
+}
+
+// to remove the other one we need to add remove script
+// when success show we remove the error and same with error
+// lets hide the passowrd into dot
+
+
+
+</script>
+
+
+</html>

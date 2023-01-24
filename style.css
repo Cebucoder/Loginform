@@ -1,0 +1,82 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+ .container{
+    width: 100%;
+    height: 100vh;
+    background: url("back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .content{
+    width: 320px;
+    height: 400px;
+    background:#fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+ }
+ .headtag{
+    font-size: 24px;
+    margin: 10px 0;
+    color: orangered;
+    cursor: pointer;
+ }
+ .content input{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    padding-left: 15px;
+    outline-color: orangered;
+ }
+ .content button{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to left, orange,red);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin: 25px 0;
+ }
+ .content a{
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: orangered;
+ }
+ .error{
+    font-size: 13px;
+    color: orangered;
+    display: none;
+ }
+/*to display error when call from javascript*/
+.show-error{
+    display: block;
+}
+
+ .success{
+    font-size: 13px;
+    color: orangered;
+    display: none;
+ }
+
+ /*to display success when call from javascript*/
+.show-success{
+    display: block;
+}
+
+/* lets center the content*/
